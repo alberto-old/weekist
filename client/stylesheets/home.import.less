@@ -1,0 +1,350 @@
+//== Colors weekist
+@acqua-dark: 		#3BAFDA;
+@acqua-light: 		#4FC1E9;
+@jeans-dark: 		#4A89DC;
+@jeans-light:		#5D9CEC;
+@dark-gray1:		#656D78;
+@dark-gray2:		#434A54;
+@grape-light: 		#ED5565;
+@grape-dark:		#DA4453;
+@mint-light:		#48CFAD;
+@mint-dark:			#37BC9B;
+@sunflower-light:	#FFCE54;
+@sunflower-dark:	#F6BB42;
+
+@indigo: 		#264348;
+@indigo-light:  #3B5E64;
+
+
+//== Color weekist palette
+@waterends:		#2B4E72;
+@waterbegins:	#2790B0;
+@grass:			#94BA65;
+@live:			#EBBB54;
+@questions:		#CF4444;
+
+
+
+//== Fonts weekist
+// @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+// General
+// 
+
+@footer-height: 50px;
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+
+body {
+	margin-bottom: @footer-height;
+}
+
+
+// NavBar template
+//
+
+.navbar {
+	height: 65px;
+	background-color: @waterends;
+	border: 0;
+}
+
+.navbar-brand {
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+.navbar-nav {
+	li, a {
+		color: white;
+		line-height: 50px;
+	}
+}
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+	padding-top: 30px;
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    border: 0px;
+    background-color: #7998b9;
+}
+
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: white;
+	border-color: white;
+    background-color: @waterends;
+}
+
+
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: @waterbegins;
+    border-bottom-color: @waterbegins;
+}
+
+
+// Login template
+// 
+
+#login-form {
+	padding-top: 89px;
+	color: @dark-gray2;
+}
+
+// Promo template
+// 
+
+#home-promo {
+	margin-top: 0px;
+	padding-top: 0px;
+
+	h1, h2 {
+		color: @waterends;
+	}
+}
+
+// Features template
+// 
+
+#features {
+	padding-top: 34px;
+	color: @dark-gray2;
+}
+
+.site-heading {
+	padding-top: 5px;
+}
+
+.icon-feature {
+	text-align: center;
+}
+
+#icon-feature-report {
+	color: @questions;
+}
+
+#icon-feature-filter {
+	color: @grass;
+}
+
+#icon-feature-more {
+	color: @live;
+}
+
+// Footer template
+// 
+.footer {
+	position: absolute;
+	bottom: 0;
+  	width: 100%;
+  	height: @footer-height;
+  	background-color: @waterends;
+
+  	.row {
+  		padding-top: 15px;
+  	}
+
+  	p {
+  		color: white;
+  	}
+
+  	a {
+  		line-height: 20px;
+  		vertical-align: center;
+  		color: white;
+  	}
+}
+
+// RangeSelector template
+// 
+
+#range-separator {
+	background-color: white;
+	color: @waterends;
+	border-left: 0;
+	border-right: 0;
+}
+
+
+// FilterLabel, FilterNotes, FilterProject
+// 
+
+#filter-label, #filter-project, #filter-notes, #filter-filter {
+	margin-left: 10px;
+	color: @waterends;
+}
+
+#show-notes-checkbox {
+	float: left;
+	margin-right: 5px;
+}
+
+
+#project-select {
+	margin-left: 5px; 
+	width: 310px;
+}
+
+#label-select {
+	margin-left: 5px; 
+	width: 190px;
+}
+
+#filter-filter {
+	margin-left: 5px; 
+	width: 190px;
+}
+
+
+// ReportType template
+// 
+
+#report-type-label {
+	color: @waterends;
+	padding-right: 5px;
+}
+
+.btn-report-type {
+	background-color: @waterbegins;
+	color: white;
+}
+
+.btn-report-type.active {
+	background-color: white;
+	color: @waterends;
+	border-color: @waterbegins;
+}
+
+
+// ReportContent template
+// 
+
+#report-content-panel {
+	border-color: @waterbegins;
+
+	.panel-heading {
+		color: white;
+		background-color: @waterbegins;
+		border-color: @waterbegins;
+	}
+
+	.panel-body {
+		border-color: @waterbegins;	
+	}
+}
+
+.label-primary {
+	background-color: @questions;
+}
+
+.item-date {
+	width: 130px;
+}
+
+// Reports template
+// 
+
+#month-selector {
+}
+
+#week-selector {
+	display: none;
+}
+
+#range-selector {
+	display: none;
+}
+
+#btn-generate-report {
+	margin-top: 2px;
+	color: white;
+	background-color: @waterbegins;
+	border-width: 0px;
+}
+
+#btn-generate-report:focus {
+	outline: none;
+}
+
+// Nprogress
+// 
+#nprogress .bar {
+	background: white;
+}
+
+#nprogress .spinner-icon {
+	border-top-color: white;
+  	border-left-color: white;
+}
+
+
+// Loading template
+// 
+
+#loading-wait {
+	margin-top: 0px;
+	padding-top: 0px;
+
+	h1, h2 {
+		color: @waterbegins;
+	}
+}
+
+
+// Pikaday CSS
+// 
+.pika-table th {
+    color: @waterbegins;
+}
+
+.pika-button:hover {
+    background: @questions !important;
+}
+
+
+.is-selected .pika-button {
+    background: @waterbegins;
+}
+
+.pika-button {    
+    background: white;
+}
+
+.pika-single {
+    color: @waterends;
+}
+
+.is-today .pika-button {
+    color: black;
+}

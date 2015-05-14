@@ -1,0 +1,11 @@
+<template name="FilterProject">
+    <div id="filter-project" class="form-group">
+        <label for="project-select">Project:</label>
+        <select id="project-select" class="form-control">
+            <option value="all" selected>All</option>
+            {{#each projects}}
+            <option value="{{project_id}}">{{name}}</option>
+            {{/each}}
+        </select>
+    </div>
+</template>

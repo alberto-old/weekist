@@ -1,0 +1,11 @@
+<template name="FilterLabel">
+    <div id="filter-label" class="form-group">
+        <label for="label-select">Label:</label>
+        <select id="label-select" class="form-control">
+            <option value="all">All</option>
+            {{#each labels}}
+            <option value="{{label_id}}">{{name}}</option>
+            {{/each}}
+        </select>
+    </div>
+</template>

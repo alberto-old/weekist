@@ -1,0 +1,29 @@
+<template name="Login">
+    <div id="login-form">
+        <h2><strong>Login</strong> with Todoist</h2>
+        <form class="form-horizontal">
+            <div style="display:{{loginFormErrorVisibility}}" id="login-alert" class="alert alert-danger col-xs-12">{{loginFormError}}</div>
+            <div class="form-group" >
+                <div class="col-xs-12">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                        <input id="login-email" type="text" name="email" class="form-control input-lg" placeholder="Todoist e-mail" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" >
+                <div class="col-xs-12">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-asterisk"></i></span>
+                        <input id="login-password" type="password" name="password" class="form-control input-lg" placeholder="Todoist password" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group form-actions">
+                <div class="col-xs-12 text-right">
+                    <button type="submit" class="btn btn-lg btn-primary" style="float: right"><i class="fa fa-sign-in"></i> Sign in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</template>

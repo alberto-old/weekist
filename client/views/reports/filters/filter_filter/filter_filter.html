@@ -1,0 +1,10 @@
+<template name="FilterFilter">
+    <div id="filter-filter" class="form-group">
+        <label for="filter-select">Filter:</label>
+        <select id="filter-select" class="form-control" style="margin-left: 5px; width: 190px;">
+            {{#each filters}}
+            <option value="{{filter_id}}">{{query}}</option>
+            {{/each}}
+        </select>
+    </div>
+</template>
