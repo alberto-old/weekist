@@ -75,8 +75,6 @@ function prepareReport (reportType) {
 		selector.project_id = projectId;
 	}
 
-	console.log (selector);
-
 	Session.set ('reportSearch', selector);
 	Session.set ('reportReady', true);	
 }
@@ -112,9 +110,22 @@ Template.Reports.helpers({
 	},
 	reportReady: function() {
 		return Session.get ("reportReady");
-	}
+	},
+	isAdmin: function() {
+        return Template.instance().isAdmin.get();
+    }
 
 });
+
+Template.Reports.onCreated ( function() {
+	var self = this;
+    self.isAdmin = new ReactiveVar();
+
+    Meteor.call('isAdmin', function (error, result) {
+        self.isAdmin.set(result);
+    });
+});
+
 
 Template.Reports.onRendered ( function() {
 
@@ -124,7 +135,7 @@ Template.Reports.onRendered ( function() {
     // Update Todoist data
     Meteor.call ( 'updateTodoistData', Meteor.userId(), function (error, result) {            
         if ( error ) {
-            Meteor.log.error ( error.reason );
+            console.log ( error.reason );
         }
         NProgress.done();
     });	

@@ -400,26 +400,26 @@
 	"buffers":
 	[
 		{
-			"file": "client/views/reports/report_content/report_content.html",
+			"file": "server/lib/items_functions.js",
 			"settings":
 			{
-				"buffer_size": 929,
+				"buffer_size": 2155,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "server/methods/todoist.js",
+			"file": "server/methods/users.js",
 			"settings":
 			{
-				"buffer_size": 4489,
+				"buffer_size": 467,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "server/lib/user_functions.js",
+			"file": "client/views/reports/reports.html",
 			"settings":
 			{
-				"buffer_size": 3262,
+				"buffer_size": 1283,
 				"line_ending": "Unix"
 			}
 		},
@@ -427,15 +427,7 @@
 			"file": "client/views/reports/reports.js",
 			"settings":
 			{
-				"buffer_size": 3278,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/views/reports/filters/filter_label/filter_label.js",
-			"settings":
-			{
-				"buffer_size": 338,
+				"buffer_size": 3528,
 				"line_ending": "Unix"
 			}
 		}
@@ -733,20 +725,33 @@
 	},
 	"expanded_folders":
 	[
-		"/home/alberto/projects/weekist4",
-		"/home/alberto/projects/weekist4/client",
-		"/home/alberto/projects/weekist4/client/views",
-		"/home/alberto/projects/weekist4/client/views/home",
-		"/home/alberto/projects/weekist4/client/views/reports",
-		"/home/alberto/projects/weekist4/client/views/reports/filters",
-		"/home/alberto/projects/weekist4/client/views/reports/filters/filter_label",
-		"/home/alberto/projects/weekist4/client/views/reports/filters/filter_project",
-		"/home/alberto/projects/weekist4/server",
-		"/home/alberto/projects/weekist4/server/lib",
-		"/home/alberto/projects/weekist4/server/methods"
+		"/home/alberto/projects/weekist3",
+		"/home/alberto/projects/weekist3/client",
+		"/home/alberto/projects/weekist3/client/lib",
+		"/home/alberto/projects/weekist3/client/stylesheets",
+		"/home/alberto/projects/weekist3/client/views",
+		"/home/alberto/projects/weekist3/client/views/reports",
+		"/home/alberto/projects/weekist3/server",
+		"/home/alberto/projects/weekist3/server/lib",
+		"/home/alberto/projects/weekist3/server/methods"
 	],
 	"file_history":
 	[
+		"/home/alberto/Descargas/reports.js",
+		"/home/alberto/Descargas/reports.html",
+		"/home/alberto/projects/weekist3/server/kadira.js",
+		"/home/alberto/projects/weekist3/settings.json",
+		"/home/alberto/projects/weekist3/client/views/navbar/navbar.js",
+		"/home/alberto/projects/weekist3/.meteor/local/build/programs/web.browser/app/client/lib/moment_en-gb.js at develop · moment_moment · GitHub_files/github-6ef28f80a929515cb3e7e424363db63629a966b42acdf1666c433dc4b46de3db.js",
+		"/home/alberto/projects/weekist3/client/views/reports/reports.js",
+		"/home/alberto/projects/weekist3/client/lib/moment_en-gb.js at develop · moment_moment · GitHub_files/github-6ef28f80a929515cb3e7e424363db63629a966b42acdf1666c433dc4b46de3db.js",
+		"/home/alberto/projects/weekist3/.meteor/local/build/programs/web.browser/8607751cec7bacf545ef222ff9c43bcba98c50a7.js",
+		"/home/alberto/projects/weekist3/client/lib/moment_en-gb.js at develop · moment_moment · GitHub_files/frameworks-2c8ae50712a47d2b83d740cb875d55cdbbb3fdbccf303951cc6b7e63731e0c38.js",
+		"/home/alberto/projects/weekist3/server/methods/todoist.js",
+		"/home/alberto/projects/weekist3/server/lib/labels_functions.js",
+		"/home/alberto/projects/weekist3/server/lib/user_functions.js",
+		"/home/alberto/projects/weekist3/client/views/reports/filters/filter_label/filter_label.js",
+		"/home/alberto/projects/weekist3/client/views/reports/report_content/report_content.html",
 		"/home/alberto/projects/weekist4/server/methods/server.js",
 		"/home/alberto/projects/weekist4/client/views/reports/reports.js",
 		"/home/alberto/projects/weekist4/client/views/reports/filters/filter_project/filter_projects.js",
@@ -859,22 +864,7 @@
 		"/home/alberto/projects/weekist/client/views/month_selector/month_selector.js",
 		"/home/alberto/projects/weekist/client/views/reports/reports.html",
 		"/home/alberto/projects/weekist/server/methods/todoist.js",
-		"/home/alberto/projects/weekist/client/stylesheets/data_selector.css",
-		"/home/alberto/projects/weekist/client/stylesheets/reports.css",
-		"/home/alberto/projects/weekist/client/views/month_selector/month_selector.html",
-		"/home/alberto/projects/weekist/client/views/week_selector/week_selector.html",
-		"/home/alberto/projects/weekist/client/views/range_selector/range_selector.html",
-		"/home/alberto/projects/weekist/client/stylesheets/signin_form.css",
-		"/home/alberto/projects/weekist/client/views/data_selector/data_selector.js",
-		"/home/alberto/projects/weekist/client/views/data_selector/data_selector-old.js",
-		"/home/alberto/projects/weekist/client/views/data_selector/date_range.html",
-		"/home/alberto/projects/weekist/client/views/date_range/date_range.html",
-		"/home/alberto/projects/weekist/server/methods/users.js",
-		"/home/alberto/projects/weekist/client/views/report_content/report_content.html",
-		"/home/alberto/projects/weekist/client/views/project/project.js",
-		"/home/alberto/projects/weekist/client/views/loading/loading.html",
-		"/home/alberto/projects/weekist/client/views/project/project.html",
-		"/home/alberto/projects/weekist/client/views/data_content/data_content.html"
+		"/home/alberto/projects/weekist/client/stylesheets/data_selector.css"
 	],
 	"find":
 	{
@@ -885,6 +875,8 @@
 		"height": 96.0,
 		"where_history":
 		[
+			"*.js",
+			"npm.js",
 			"*.js",
 			"*.css",
 			"*.js",
@@ -899,6 +891,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"error",
+			"Meteor.log",
+			"content",
+			"Jon Ny",
+			"Jon",
+			"console.log",
+			"Meteor.log",
+			"meta[name=user-login]\")",
+			"*",
+			"Starred a repo",
+			"Jt=function(){try{var t=new Uint32Array(",
+			"Jon Nylander",
+			"Financial Times",
+			"Financial",
 			"label_id",
 			"server.js",
 			"labels",
@@ -1031,34 +1037,33 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "client/views/reports/report_content/report_content.html",
+					"file": "server/lib/items_functions.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 929,
+						"buffer_size": 2155,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								467,
-								467
+								1725,
+								1725
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 482.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -1066,60 +1071,59 @@
 				},
 				{
 					"buffer": 1,
-					"file": "server/methods/todoist.js",
+					"file": "server/methods/users.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4489,
+						"buffer_size": 467,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1735,
-								1735
+								61,
+								61
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 648.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "server/lib/user_functions.js",
+					"file": "client/views/reports/reports.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3262,
+						"buffer_size": 1283,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3165,
-								3165
+								1107,
+								1107
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1296.0,
+						"translation.y": 210.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1131,60 +1135,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3278,
+						"buffer_size": 3528,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2772,
-								2772
+								2489,
+								2489
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": -0.0,
-						"translation.y": 648.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "client/views/reports/filters/filter_label/filter_label.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 338,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								198,
-								198
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1547.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1229,7 +1201,7 @@
 	"project": "weekist4.sublime-project",
 	"replace":
 	{
-		"height": 72.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1267,7 +1239,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 288.0,
+	"side_bar_width": 304.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

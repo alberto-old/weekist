@@ -1,5 +1,4 @@
-// var userAdmin ="RPaLX7Sa5dsi6MR7B"; // admin en weekist real
-var userAdmin = "v8T7EJzZ5DJCM8W8e";
+var userAdmin ="WWSKnfPaGzvuciWxn"; // admin en weekist real
 
 Meteor.methods({
 	isAdmin: function() {

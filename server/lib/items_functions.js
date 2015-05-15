@@ -35,12 +35,14 @@ Meteor.items = {
         }
 		return newItem;
 	},
-	updateCompletedDate: function ( item, completedDate ) {
-		item.completed_date = completedDate;
-		item.yearWeek 		= completedDate.getYearWeek(),
-        item.year 			= completedDate.getFullYear(),
-        item.month 			= completedDate.getMonth() + 1,
-        item.week 			= completedDate.getWeek()
+	updateCompletedDate: function ( completedDate ) {
+		var item = {
+			completed_date: completedDate,
+			yearWeek: 		completedDate.getYearWeek(),
+        	year: 			completedDate.getFullYear(),
+        	month: 			completedDate.getMonth()+1,
+        	week: 			completedDate.getWeek()			
+		}
 		return item;
 	},
 	updateCompletedItems: function ( userId, items ) {
@@ -53,7 +55,7 @@ Meteor.items = {
 			// if exists
 			if (item) {
 				// update the completed date
-				newItem = Meteor.items.updateCompletedDate ( item, new Date(items[i].completed_date) );
+				newItem = Meteor.items.updateCompletedDate ( new Date(items[i].completed_date) );
 				Items.update ( { owner: userId, _id: item._id }, { $set: newItem }, { upsert: true });
 			} else {
 				// create a new item with the information available for a "completed item" in Todoist

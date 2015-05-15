@@ -44,6 +44,12 @@
 			{{> ReportContent reportTitle=title reportItems=items }}
 		</div>
 		{{/if}}
+		{{#if isAdmin}}
+		<div class="container">
+			{{> Users}}
+		</div>
+		{{/if}}
+
 	{{else}}
 	<div class="container">
 		{{> Loading }}

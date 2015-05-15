@@ -6,14 +6,15 @@
 
 meteor-platform
 http
-iron:router
-twbs:bootstrap
 less
-fortawesome:fontawesome
 accounts-password
+iron:router
+fortawesome:fontawesome
+meteorhacks:fast-render
+twbs:bootstrap
 copleykj:autolinker
 mrt:nprogress
-meteorhacks:fast-render
-jquery
-momentjs:moment
 richsilv:pikaday
+momentjs:moment
+meteorhacks:kadira
+reactive-var

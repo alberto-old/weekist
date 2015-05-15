@@ -14,7 +14,7 @@ Template.NavBar.events({
         // Update Todoist data
         Meteor.call ( 'updateTodoistData', Meteor.userId(), function (error, result) {            
             if ( error ) {
-                Meteor.log.error ( error.reason );
+                console.log ( error.reason );
             }
 
             NProgress.done();
