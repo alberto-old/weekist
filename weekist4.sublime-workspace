@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"auto",
+				"authorizeWithTodoist〔class〕"
+			],
+			[
+				"Tod",
+				"TodoistV6〔variable〕"
+			],
+			[
 				"las",
 				"lastCompletedDate"
 			],
@@ -408,14 +416,6 @@
 			}
 		},
 		{
-			"file": "server/methods/users.js",
-			"settings":
-			{
-				"buffer_size": 467,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "client/views/reports/reports.html",
 			"settings":
 			{
@@ -430,6 +430,41 @@
 				"buffer_size": 3528,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "server/methods/authentication.js",
+			"settings":
+			{
+				"buffer_size": 2350,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "TodoistV6 = {};\n\nTodoistV6.whitelistedFields = ['client_id', 'scope', 'state', 'redirect_uri', 'client_secret', 'code' ];\n\nOAuth.registerService('todoistv6', 2, null, function(query) {\n	var response = getAccessToken(query);\n	\n	console.log (response);\n\n});\n\nfunction authorizeWithTodoist (config, state) {\n    var todoistLoginURL = \"https://todoist.com/oauth/authorize?\";\n    var params = {\n        cliend_id: config.client_id,\n        client_secret: OAuth.openSecret(config.client_secret),\n        scope: config.scope,\n        state: state\n    };\n\n    console.log ()\n\n    try {\n        var data = HTTP.get(todoistLoginURL, { params: params });\n        return data;\n    } catch (e) {\n        throw new Meteor.Error(\"login-error\", \"Login error: cannot validate user with Todoist server\");\n    }\n}\n\nfunction getAccessToken (state) {\n	var config = ServiceConfiguration.configurations.findOne({service: 'todoistv6'});\n	if (!config) {\n		throw new ServiceConfiguration.ConfigError();\n	}\n\n	console.log (config);\n\n	var response;\n	try {\n		response = authorizeWithTodoist (config, state);\n	} catch (err) {\n    	throw _.extend(new Error(\"Failed to complete OAuth handshake with Todoist. \" + err.message), {response: err.response});\n  	}\n\n    if (response.data.error) { \n   		throw new Error(\"Failed to complete OAuth handshake with Todoist. \" + response.data.error);\n 	 } else {\n    	return response.data.access_token;\n  	}\n}\n\nTodoistV6.retrieveCredential = function(credentialToken, credentialSecret) {\n	return OAuth.retrieveCredential(credentialToken, credentialSecret);\n};\n\n\nMeteor.methods({\n	getAuthorization: function () {\n		var state = Random.secret();\n		getAccessToken (state);\n	}\n});",
+			"file": "server/methods/authentication_oauth.js",
+			"file_size": 1659,
+			"file_write_time": 130761660426343827,
+			"settings":
+			{
+				"buffer_size": 1679,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/home/login/login.html",
+			"settings":
+			{
+				"buffer_size": 1784,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/home/login/login.js",
+			"settings":
+			{
+				"buffer_size": 1400,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -439,17 +474,25 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 180.0,
+		"height": 400.0,
 		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"Snippet:helper",
-				"Snippet: Meteor: Template.myTemplate.helpers(helpers)"
-			],
-			[
 				"Snippet:methods",
 				"Snippet: Meteor.methods(methods)"
+			],
+			[
+				"Snippet:Methdos",
+				"Snippet: Meteor.methods(methods)"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"Snippet:helper",
+				"Snippet: Meteor: Template.myTemplate.helpers(helpers)"
 			],
 			[
 				"Package Control: ",
@@ -725,18 +768,22 @@
 	},
 	"expanded_folders":
 	[
-		"/home/alberto/projects/weekist3",
-		"/home/alberto/projects/weekist3/client",
-		"/home/alberto/projects/weekist3/client/lib",
-		"/home/alberto/projects/weekist3/client/stylesheets",
-		"/home/alberto/projects/weekist3/client/views",
-		"/home/alberto/projects/weekist3/client/views/reports",
-		"/home/alberto/projects/weekist3/server",
-		"/home/alberto/projects/weekist3/server/lib",
-		"/home/alberto/projects/weekist3/server/methods"
+		"/home/alberto/projects/weekist2",
+		"/home/alberto/projects/weekist2/client",
+		"/home/alberto/projects/weekist2/client/views",
+		"/home/alberto/projects/weekist2/client/views/home",
+		"/home/alberto/projects/weekist2/client/views/home/login",
+		"/home/alberto/projects/weekist2/server",
+		"/home/alberto/projects/weekist2/server/lib",
+		"/home/alberto/projects/weekist2/server/methods"
 	],
 	"file_history":
 	[
+		"/home/alberto/projects/weekist2/client/todoist_login.js",
+		"/home/alberto/projects/weekist2/client/todoist_oauth.js",
+		"/home/alberto/projects/weekist2/server/todoist_serviceconfiguration.js",
+		"/home/alberto/projects/weekist2/server/methods/todoist.js",
+		"/home/alberto/projects/weekist2/server/methods/users.js",
 		"/home/alberto/Descargas/reports.js",
 		"/home/alberto/Descargas/reports.html",
 		"/home/alberto/projects/weekist3/server/kadira.js",
@@ -859,12 +906,7 @@
 		"/home/alberto/projects/weekist/client/views/label_selector/label_selector.html",
 		"/home/alberto/projects/weekist/client/views/project_selector/project_selector.html",
 		"/home/alberto/projects/weekist/client/views/project_selector/project_selector.js",
-		"/home/alberto/projects/weekist/client/views/label_selector/label_selector.js",
-		"/home/alberto/projects/weekist/client/views/main/main.html",
-		"/home/alberto/projects/weekist/client/views/month_selector/month_selector.js",
-		"/home/alberto/projects/weekist/client/views/reports/reports.html",
-		"/home/alberto/projects/weekist/server/methods/todoist.js",
-		"/home/alberto/projects/weekist/client/stylesheets/data_selector.css"
+		"/home/alberto/projects/weekist/client/views/label_selector/label_selector.js"
 	],
 	"find":
 	{
@@ -891,6 +933,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"query",
+			"Meteor.loginWith",
 			"error",
 			"Meteor.log",
 			"content",
@@ -1037,7 +1081,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -1060,47 +1104,19 @@
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 482.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "server/methods/users.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 467,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								61,
-								61
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 260.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "client/views/reports/reports.html",
 					"semi_transient": false,
 					"settings":
@@ -1119,6 +1135,7 @@
 						"settings":
 						{
 							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1126,11 +1143,11 @@
 						"translation.y": 210.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "client/views/reports/reports.js",
 					"semi_transient": false,
 					"settings":
@@ -1149,6 +1166,7 @@
 						"settings":
 						{
 							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1156,7 +1174,133 @@
 						"translation.y": 1547.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "server/methods/authentication.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2350,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								760,
+								760
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "server/methods/authentication_oauth.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1679,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								565,
+								565
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "client/views/home/login/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1488,
+								1488
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "client/views/home/login/login.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1400,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1123,
+								1123
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
