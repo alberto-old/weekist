@@ -27,18 +27,7 @@ Template.Login.events({
                 }
             }
         });
-	},
-    'click #todoist-auth-btn': function (event) {
-        event.preventDefault();
-
-        Meteor.call("getAuthorization", function (error, result) {
-            if (error) {
-                console.log (error.reason);
-            } else {
-                console.log (result);
-            }
-        })
-    }
+	}
 });
 
 
