@@ -348,3 +348,28 @@ body {
 .is-today .pika-button {
     color: black;
 }
+
+// Print
+//
+
+@media print {
+	header, footer, #report-data-selector, #print-btn { display: none }
+	#report-content-panel {
+		border-width: 0px;		
+
+		.panel-heading {
+			color: black;
+			background-color: white;
+			border-color: gray;
+		}
+
+		.panel-body {
+			border-color: gray;
+		}
+	}
+
+	.label-primary {
+		background-color: white;
+		border-width: 0px;
+	}
+}

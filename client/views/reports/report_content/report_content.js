@@ -1,3 +1,11 @@
+Template.ReportContent.events({
+	'click #print-btn': function (event) {
+		event.preventDefault();
+
+		print();
+	}
+});
+
 Template.ReportContent.helpers({
 	showNotes: function () {
 		return Session.get ("showNotes");	
