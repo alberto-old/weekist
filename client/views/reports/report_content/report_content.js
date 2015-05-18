@@ -1,5 +1,5 @@
 Template.ReportContent.events({
-	'click #print-btn': function (event) {
+	'click #btn-print': function (event) {
 		event.preventDefault();
 
 		print();
