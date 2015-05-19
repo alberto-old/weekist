@@ -1,16 +1,20 @@
 <template name="ReportContent">
 
+	<div id="alert-email">{{> sAlert }}</div>
+
 	<div id="report-content-panel" class="panel panel-default">
 		  <div class="panel-heading">
 				<h3 class="panel-title">{{reportTitle}}
-				<span id="btn-print" class="pull-right"><i class="fa fa-print"></i></span></h3>
+					<span id="btn-print" class="pull-right"><i class="fa fa-print"></i></span>
+					<span id="btn-mail" class="pull-right"><i class="fa fa-envelope-o"></i></span>
+				</h3>
 		  </div>
 		  <div class="panel-body">
 				<table class="table">
 					<tbody>
 						{{#each reportItems}}
 						<tr>
-                    		<td class="item-date">{{formatDate completed_date}}</td>
+                    		<td class="item-date" style="width: 130px;">{{formatDate completed_date}}</td>
                     		<td class="item-content">
                     			{{{formatItem content}}}<br>
                     			{{#if showNotes}}

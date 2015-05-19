@@ -3,6 +3,21 @@ Template.ReportContent.events({
 		event.preventDefault();
 
 		print();
+	},
+	'click #btn-mail': function (event) {
+		event.preventDefault();
+
+		var emailAddress = Meteor.user().username;
+		var subject = this.reportTitle;
+		var content = Blaze.toHTMLWithData (Template.ReportContent, this);
+
+		Meteor.call('sendReport', emailAddress, subject, content, function (error, result) {
+			if (error) {
+				console.log ("Error sending report: " + error.reason);
+			} else {
+				sAlert.success('Email sent!', { position: 'top-right', timeout: 2500 } );
+			}
+		});
 	}
 });
 
