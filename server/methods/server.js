@@ -12,7 +12,7 @@ Meteor.methods({
 
 		Email.send ({ 
 			from: "weekist@bitmoon.com",
-			to: "alberto.villa@bitmoon.com",
+			to: email,
 			subject: "Weekist report: " + subject,
 			html: content
 		});

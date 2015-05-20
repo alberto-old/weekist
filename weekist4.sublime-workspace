@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"margi",
+				"margin-left"
+			],
+			[
 				"auto",
 				"authorizeWithTodoist〔class〕"
 			],
@@ -408,18 +412,26 @@
 	"buffers":
 	[
 		{
-			"file": "client/views/home/login/login.html",
+			"file": "client/views/reports/report_content/report_content.html",
 			"settings":
 			{
-				"buffer_size": 1478,
+				"buffer_size": 1164,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/views/home/login/login.js",
+			"file": "client/views/reports/report_content/report_content.js",
 			"settings":
 			{
-				"buffer_size": 1090,
+				"buffer_size": 1636,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/methods/server.js",
+			"settings":
+			{
+				"buffer_size": 440,
 				"line_ending": "Unix"
 			}
 		}
@@ -432,9 +444,17 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "",
+		"last_filter": "Snippet: call",
 		"selected_items":
 		[
+			[
+				"Snippet: call",
+				"Snippet: Meteor.call(name, param1, param2, ... [, asyncCallback])"
+			],
+			[
+				"Snippet: events",
+				"Snippet: Meteor: Template.myTemplate.events(eventMap)"
+			],
 			[
 				"Snippet:methods",
 				"Snippet: Meteor.methods(methods)"
@@ -727,22 +747,31 @@
 	[
 		"/home/alberto/projects/weekist",
 		"/home/alberto/projects/weekist/client",
+		"/home/alberto/projects/weekist/client/stylesheets",
 		"/home/alberto/projects/weekist/client/views",
-		"/home/alberto/projects/weekist/client/views/home",
-		"/home/alberto/projects/weekist/client/views/home/login",
+		"/home/alberto/projects/weekist/client/views/navbar",
+		"/home/alberto/projects/weekist/client/views/reports",
+		"/home/alberto/projects/weekist/client/views/reports/report_content",
 		"/home/alberto/projects/weekist/server",
 		"/home/alberto/projects/weekist/server/lib",
 		"/home/alberto/projects/weekist/server/methods"
 	],
 	"file_history":
 	[
+		"/home/alberto/projects/weekist/server/methods/server.js",
+		"/home/alberto/projects/weekist/client/stylesheets/home.import.less",
+		"/home/alberto/projects/weekist/client/views/reports/report_content/report_content.html",
+		"/home/alberto/projects/weekist/client/views/reports/report_content/report_content.js",
+		"/home/alberto/projects/weekist/.meteor/local/build/programs/web.browser/app/client/views/reports/report_content/report_content.js",
+		"/home/alberto/projects/weekist/client/views/reports/reports.html",
+		"/home/alberto/projects/weekist/.meteor/local/build/programs/server/app/server/methods/todoist.js",
+		"/home/alberto/projects/weekist/.meteor/local/build/programs/web.browser/app/client/views/reports/reports.js",
+		"/home/alberto/projects/weekist/client/views/home/login/login.html",
+		"/home/alberto/projects/weekist/client/views/home/login/login.js",
 		"/home/alberto/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/home/alberto/projects/weekist/server/methods/authentication.js",
 		"/home/alberto/projects/weekist/server/methods/authentication_oauth.js",
-		"/home/alberto/projects/weekist/client/views/home/login/login.html",
-		"/home/alberto/projects/weekist/client/views/home/login/login.js",
 		"/home/alberto/projects/weekist/client/views/reports/reports.js",
-		"/home/alberto/projects/weekist/client/views/reports/reports.html",
 		"/home/alberto/projects/weekist/server/lib/items_functions.js",
 		"/home/alberto/projects/weekist2/client/todoist_login.js",
 		"/home/alberto/projects/weekist2/client/todoist_oauth.js",
@@ -856,18 +885,11 @@
 		"/home/alberto/projects/weekist2/client/views/home/home.html",
 		"/home/alberto/projects/weekist2/client/stylesheets/vendor/bootstrap/mixins.import.less",
 		"/home/alberto/projects/weekist2/client/vendor/styles.import.less",
-		"/home/alberto/projects/weekist2/client/vendor/bootstrap/bootstrap.import.less",
-		"/home/alberto/projects/weekist2/client/stylesheets/vendor/custom.bootstrap.import.less",
-		"/home/alberto/projects/weekist2/client/stylesheets/typo.import.less",
-		"/home/alberto/projects/weekist2/client/stylesheets/vendor/custom.bootstrap.json",
-		"/home/alberto/projects/weekist2/client/stylesheets/styles.less",
-		"/home/alberto/projects/weekist2/client/stylesheets/sites/home.import.less",
-		"/home/alberto/projects/weekist/lib/router.js",
-		"/home/alberto/projects/weekist2/client/lib/custom.bootstrap.json"
+		"/home/alberto/projects/weekist2/client/vendor/bootstrap/bootstrap.import.less"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -890,6 +912,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"email",
+			"Meteor.currentUser.",
+			"print-btn",
+			"2.0.3",
 			"query",
 			"Meteor.loginWith",
 			"error",
@@ -1038,32 +1064,59 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "client/views/home/login/login.html",
+					"file": "client/views/reports/report_content/report_content.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1478,
+						"buffer_size": 1164,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1438,
-								1438
+								504,
+								504
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/views/reports/report_content/report_content.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								559,
+								559
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1073,34 +1126,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "client/views/home/login/login.js",
+					"buffer": 2,
+					"file": "server/methods/server.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1090,
+						"buffer_size": 440,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								844,
-								844
+								208,
+								208
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
