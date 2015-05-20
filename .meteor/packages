@@ -18,7 +18,6 @@ richsilv:pikaday
 momentjs:moment
 meteorhacks:kadira
 reactive-var
-force-ssl
 service-configuration
 oauth2
 oauth
