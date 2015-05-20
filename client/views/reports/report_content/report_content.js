@@ -15,7 +15,7 @@ Template.ReportContent.events({
 			if (error) {
 				console.log ("Error sending report: " + error.reason);
 			} else {
-				sAlert.success('Email sent!', { position: 'top-right', timeout: 2500 } );
+				sweetAlert( "Email sent", "to " + emailAddress, "success");
 			}
 		});
 	}
