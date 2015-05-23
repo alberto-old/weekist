@@ -200,7 +200,7 @@ body {
 // FilterLabel, FilterNotes, FilterProject
 // 
 
-#filter-label, #filter-project, #filter-notes, #filter-filter {
+#filter-label, #filter-project, #filter-notes, #filter-filter, #filter-duedate {
 	margin-left: 10px;
 	color: @waterends;
 }
@@ -210,6 +210,10 @@ body {
 	margin-right: 5px;
 }
 
+#show-duedate-checkbox {
+	float: left;
+	margin-right: 5px;
+}
 
 #project-select {
 	margin-left: 5px; 
@@ -270,6 +274,14 @@ body {
 
 .item-date {
 	width: 130px;
+}
+
+.item-date-late {
+	color: @questions
+}
+
+.item-date-ontime {
+	color: @grass
 }
 
 // Reports template

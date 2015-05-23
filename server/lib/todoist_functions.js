@@ -33,7 +33,8 @@ Meteor.todoist = {
 		var request = 'https://todoist.com/API/v6/get_all_completed_items?'
     	var params = {
         	token: apiToken,
-        	from_date: date,
+        	// from_date: date,
+        	date: date,
         	limit: 50, 
         	offset: offsetValue
     	};

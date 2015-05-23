@@ -13,9 +13,9 @@
 						{{#each reportItems}}
 						<tr>
                     		<td class="item-date" style="width: 130px;">{{formatDate completed_date}}</td>
-                    		<!-- {{#if showDueDate}} -->
-                    		<td class="item-date" styel="width: 130px;">{{formatDate due_date}}</td>
-                    		<!-- {{/if}} -->
+                    		{{#if showDueDate}}
+                    		<td class="item-date" style="width: 140px;"><i class="fa fa-circle {{statusCompleted}}"></i> {{dueDate}}</td>
+                    		{{/if}}
                     		<td class="item-content">
                     			{{{formatItem content}}}<br>
                     			{{#if showNotes}}

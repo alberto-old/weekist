@@ -36,6 +36,23 @@ Template.ReportContent.helpers({
 			var labels = Labels.find ({owner: Meteor.userId(), label_id: {$in: this.labels }});	
 			return labels;
 		}
+	},
+	showDueDate: function() {
+		return Session.get ("showDueDate");
+	},
+	statusCompleted: function() {
+		if ( new Date(this.completed_date).getTime() > new Date(this.due_date).getTime() ) {
+			return "item-date-late"
+		} else {
+			return "item-date-ontime"
+		}
+	},
+	dueDate: function() {
+		if (this.due_date == undefined) {
+			return "(not defined)"
+		} else {
+			return moment(this.due_date).format("ddd DD-MM-YYYY");
+		}
 	}
 });
 
@@ -52,7 +69,8 @@ function formatLabels ( item ) {
 }
 
 UI.registerHelper ( 'formatDate', function(date) {
-	return moment(date).format("ddd DD-MM-YYYY");
+	var newDate = new Date(date);
+	return moment(newDate).format("ddd DD-MM-YYYY");
 });
 
 UI.registerHelper ( 'formatItem', function (context, options) {
