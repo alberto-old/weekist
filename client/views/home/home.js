@@ -8,3 +8,7 @@ Meteor.startup(function () {
 		closingWindow();
 	})
 });
+
+Template.Home.onRendered ( function() {
+	GAnalytics.pageview();
+});
