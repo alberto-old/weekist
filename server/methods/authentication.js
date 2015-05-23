@@ -51,6 +51,7 @@ function loginTodoist(loginRequest) {
                         var token = JSON.parse(content).token;
                         var newUserData = Meteor.user.createNew(loginRequest.todoist.email, fullName, token);
                         userId = Meteor.users.insert(newUserData);
+                        mixpanel.track ("New user");
                     } else {
                         userId = user._id;
                     }

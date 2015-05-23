@@ -6,6 +6,9 @@
   	"public": {
   		"ga": {
   			"account": "UA-46794993-4"
+  		},
+  		"mixpanel": {
+  			"token": "f1ee479b1918907608405a258056ca4a"
   		}
   	}
 }

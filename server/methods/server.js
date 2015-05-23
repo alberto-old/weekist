@@ -5,7 +5,7 @@ Meteor.startup(function () {
 
 Meteor.methods({
 	getVersion: function () {
-		return "v2.0.8";
+		return "v2.0.9";
 	},
 	sendReport: function (email, subject, content) {
 		this.unblock();

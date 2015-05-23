@@ -23,6 +23,7 @@ Template.Login.events({
                 if (error) {
                     Session.set('loginFormError', error.reason);
                 } else {
+                    mixpanel.track ("User login");
                     Router.go('/reports');
                 }
             }

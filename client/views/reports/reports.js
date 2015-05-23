@@ -84,6 +84,7 @@ Template.Reports.events({
 		event.preventDefault();
 
 		prepareReport(Session.get('reportType'));
+		mixpanel.track ("Generate report");
 	}
 });
 
