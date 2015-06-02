@@ -41,10 +41,17 @@ Template.ReportContent.helpers({
 		return Session.get ("showDueDate");
 	},
 	statusCompleted: function() {
-		if ( new Date(this.completed_date).getTime() > new Date(this.due_date).getTime() ) {
-			return "item-date-late"
+		if (this.due_date == undefined) {
+			return "item-date-notdefined"
 		} else {
-			return "item-date-ontime"
+			var completedDate = new Date(this.completed_date);
+			var dueDate = new Date(this.due_date);
+
+			if ( completedDate > dueDate ) {
+				return "item-date-late"
+			} else {
+				return "item-date-ontime"
+			}
 		}
 	},
 	dueDate: function() {

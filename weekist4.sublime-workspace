@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"un",
+				"undefined"
+			],
+			[
+				"due",
+				"due_date"
+			],
+			[
 				"margi",
 				"margin-left"
 			],
@@ -412,10 +420,10 @@
 	"buffers":
 	[
 		{
-			"file": "client/views/reports/report_content/report_content.html",
+			"file": "server/methods/todoist.js",
 			"settings":
 			{
-				"buffer_size": 1120,
+				"buffer_size": 4489,
 				"line_ending": "Unix"
 			}
 		},
@@ -423,7 +431,15 @@
 			"file": "client/views/reports/report_content/report_content.js",
 			"settings":
 			{
-				"buffer_size": 1622,
+				"buffer_size": 2214,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/reports/report_content/report_content.html",
+			"settings":
+			{
+				"buffer_size": 1324,
 				"line_ending": "Unix"
 			}
 		},
@@ -444,9 +460,13 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "Snippet: call",
+		"last_filter": "inst",
 		"selected_items":
 		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
 			[
 				"Snippet: call",
 				"Snippet: Meteor.call(name, param1, param2, ... [, asyncCallback])"
@@ -554,10 +574,6 @@
 			[
 				"Snippet:labe",
 				"Snippet: bs3-label"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
 			],
 			[
 				"Snippet:nav",
@@ -724,7 +740,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 718.0
+		"width": 457.0
 	},
 	"console":
 	{
@@ -749,30 +765,37 @@
 		"/home/alberto/projects/weekist/client",
 		"/home/alberto/projects/weekist/client/stylesheets",
 		"/home/alberto/projects/weekist/client/views",
-		"/home/alberto/projects/weekist/client/views/navbar",
+		"/home/alberto/projects/weekist/client/views/home",
 		"/home/alberto/projects/weekist/client/views/reports",
+		"/home/alberto/projects/weekist/client/views/reports/filters",
 		"/home/alberto/projects/weekist/client/views/reports/report_content",
+		"/home/alberto/projects/weekist/lib",
 		"/home/alberto/projects/weekist/server",
-		"/home/alberto/projects/weekist/server/lib",
 		"/home/alberto/projects/weekist/server/methods"
 	],
 	"file_history":
 	[
 		"/home/alberto/projects/weekist/client/stylesheets/home.import.less",
 		"/home/alberto/projects/weekist/server/methods/server.js",
-		"/home/alberto/projects/weekist/client/views/reports/report_content/report_content.html",
+		"/home/alberto/projects/weekist/server/lib/user_functions.js",
 		"/home/alberto/projects/weekist/client/views/reports/report_content/report_content.js",
-		"/home/alberto/projects/weekist/.meteor/local/build/programs/web.browser/app/client/views/reports/report_content/report_content.js",
+		"/home/alberto/projects/weekist/client/views/reports/report_content/report_content.html",
+		"/home/alberto/projects/weekist/server/lib/items_functions.js",
+		"/home/alberto/projects/weekist/client/views/reports/filters/filter_duedate/filter_duedate.html",
+		"/home/alberto/projects/weekist/client/views/reports/filters/filter_duedate/filter_duedate.js",
+		"/home/alberto/projects/weekist/server/lib/todoist_functions.js",
 		"/home/alberto/projects/weekist/client/views/reports/reports.html",
 		"/home/alberto/projects/weekist/.meteor/local/build/programs/server/app/server/methods/todoist.js",
+		"/home/alberto/projects/weekist/lib/router.js",
+		"/home/alberto/projects/weekist/client/views/home/login/login.js",
+		"/home/alberto/projects/weekist/client/views/reports/reports.js",
+		"/home/alberto/projects/weekist/server/methods/authentication.js",
+		"/home/alberto/projects/weekist/settings.json",
+		"/home/alberto/projects/weekist/.meteor/local/build/programs/web.browser/app/client/views/reports/report_content/report_content.js",
 		"/home/alberto/projects/weekist/.meteor/local/build/programs/web.browser/app/client/views/reports/reports.js",
 		"/home/alberto/projects/weekist/client/views/home/login/login.html",
-		"/home/alberto/projects/weekist/client/views/home/login/login.js",
 		"/home/alberto/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-		"/home/alberto/projects/weekist/server/methods/authentication.js",
 		"/home/alberto/projects/weekist/server/methods/authentication_oauth.js",
-		"/home/alberto/projects/weekist/client/views/reports/reports.js",
-		"/home/alberto/projects/weekist/server/lib/items_functions.js",
 		"/home/alberto/projects/weekist2/client/todoist_login.js",
 		"/home/alberto/projects/weekist2/client/todoist_oauth.js",
 		"/home/alberto/projects/weekist2/server/todoist_serviceconfiguration.js",
@@ -808,7 +831,6 @@
 		"/home/alberto/projects/weekist4/server/lib/todoist_functions.js",
 		"/home/alberto/projects/weekist4/client/views/reports/report_content/report_content.html",
 		"/home/alberto/projects/weekist4/client/views/reports/filters/filter_label/filter_label.js",
-		"/home/alberto/projects/weekist/server/lib/user_functions.js",
 		"/home/alberto/projects/weekist4/.meteor/local/build/programs/server/app/server/lib/user_functions.js",
 		"/home/alberto/projects/weekist4/client/views/reports/reports.html",
 		"/home/alberto/projects/weekist4/client/views/reports/period_selector/range_selector/range_selector.js",
@@ -880,12 +902,7 @@
 		"/home/alberto/projects/weekist2/client/views/navbar/navbar.html",
 		"/home/alberto/projects/weekist3/weekist3.html",
 		"/home/alberto/projects/weekist2/lib/router.js",
-		"/home/alberto/projects/weekist2/client/stylesheets/style.less",
-		"/home/alberto/projects/weekist2/client/stylesheets/vendor/bootstrap/theme.import.less",
-		"/home/alberto/projects/weekist2/client/views/home/home.html",
-		"/home/alberto/projects/weekist2/client/stylesheets/vendor/bootstrap/mixins.import.less",
-		"/home/alberto/projects/weekist2/client/vendor/styles.import.less",
-		"/home/alberto/projects/weekist2/client/vendor/bootstrap/bootstrap.import.less"
+		"/home/alberto/projects/weekist2/client/stylesheets/style.less"
 	],
 	"find":
 	{
@@ -896,6 +913,8 @@
 		"height": 96.0,
 		"where_history":
 		[
+			"*.js",
+			"*.html",
 			"*.js",
 			"npm.js",
 			"*.js",
@@ -912,6 +931,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"getCompletedItemsFromDate",
+			"due_date",
+			"<head>",
 			"//==",
 			"email",
 			"Meteor.currentUser.",
@@ -1065,36 +1087,37 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "client/views/reports/report_content/report_content.html",
+					"file": "server/methods/todoist.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1120,
+						"buffer_size": 4489,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								33,
-								33
+								1352,
+								1352
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"colorcode": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 153.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1103,21 +1126,53 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1622,
+						"buffer_size": 2214,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								553,
-								553
+								1336,
+								1336
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"colorcode": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 459.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/views/reports/report_content/report_content.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								647,
+								647
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"colorcode": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1127,7 +1182,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "server/methods/server.js",
 					"semi_transient": false,
 					"settings":
@@ -1146,6 +1201,8 @@
 						"settings":
 						{
 							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark (Colorcoded).tmTheme",
+							"colorcode": true,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
