@@ -1,11 +1,9 @@
-var userAdmin ="WWSKnfPaGzvuciWxn"; // admin en weekist real
-
 Meteor.methods({
 	isAdmin: function() {
-		return (Meteor.userId() == userAdmin);
+		return ( Meteor.userId() == Meteor.settings.userAdmin );
 	},
 	getUsers: function() {
-		if ( Meteor.userId() == userAdmin ) {
+		if ( Meteor.userId() == Meteor.settings.userAdmin ) {
 			var users = Meteor.users.find().fetch();
 			return users;
 		} else {

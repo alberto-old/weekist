@@ -40,11 +40,12 @@ function loginTodoist(loginRequest) {
             if (result && result.statusCode == "200") {
                 var content = result.content;            
                 var isPremium = JSON.parse(content).is_premium;
-                if (isPremium) {
-                    var userId = null;
-                    var user = Meteor.users.findOne({
-                        username: loginRequest.todoist.email
-                    });
+                var userId = null;
+                var user = Meteor.users.findOne({
+                    username: loginRequest.todoist.email
+                });
+
+                if (isPremium || ( user._id == Meteor.settings.userAdmin )) {
 
                     if (!user) {
                         var fullName = JSON.parse(content).full_name;
