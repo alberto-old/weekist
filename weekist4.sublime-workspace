@@ -428,21 +428,18 @@
 			}
 		},
 		{
-			"contents": "<template name=\"FilterLabel\">\n    <div id=\"filter-label\" class=\"form-group\">\n        <label for=\"label-select\">Label:</label>\n        <select id=\"label-select\" class=\"form-control\">\n            <option value=\"all\">All</option>\n            {{#each labels}}\n            	<option value=\"{{label_id}}\">{{name}}</option>\n            {{/<em></em>ach}}\n        </select>\n    </div>\n</template>\n",
 			"file": "client/views/reports/filters/filter_label/filter_label.html",
-			"file_size": 379,
-			"file_write_time": 130845428764958977,
 			"settings":
 			{
-				"buffer_size": 387,
+				"buffer_size": 378,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/views/reports/filters/filter_label/filter_label.js",
+			"file": "client/views/users/users.html",
 			"settings":
 			{
-				"buffer_size": 338,
+				"buffer_size": 428,
 				"line_ending": "Unix"
 			}
 		}
@@ -455,11 +452,35 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "inst",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
 				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Snippet: temp",
+				"Snippet: Meteor Template Tag"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"isnt",
 				"Package Control: Install Package"
 			],
 			[
@@ -485,10 +506,6 @@
 			[
 				"Snippet:helper",
 				"Snippet: Meteor: Template.myTemplate.helpers(helpers)"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Remove Package"
 			],
 			[
 				"Snippet:events",
@@ -659,10 +676,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"isnt",
-				"Package Control: Install Package"
-			],
-			[
 				"created",
 				"Snippet: Meteor: Template.myTemplate.created = function ( ) { ... }"
 			],
@@ -729,13 +742,9 @@
 			[
 				"event",
 				"Snippet: Meteor: Template.myTemplate.events(eventMap)"
-			],
-			[
-				"in",
-				"Package Control: Install Package"
 			]
 		],
-		"width": 457.0
+		"width": 583.0
 	},
 	"console":
 	{
@@ -758,14 +767,15 @@
 	[
 		"/home/alberto/projects/weekist2",
 		"/home/alberto/projects/weekist2/client",
+		"/home/alberto/projects/weekist2/client/stylesheets",
 		"/home/alberto/projects/weekist2/client/views",
-		"/home/alberto/projects/weekist2/client/views/reports",
 		"/home/alberto/projects/weekist2/client/views/reports/filters",
 		"/home/alberto/projects/weekist2/client/views/reports/filters/filter_label",
 		"/home/alberto/projects/weekist2/lib"
 	],
 	"file_history":
 	[
+		"/home/alberto/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
 		"/home/alberto/projects/weekist2/server/methods/server.js",
 		"/home/alberto/projects/weekist2/client/views/application/wait-loading/wait-loading.html",
 		"/home/alberto/projects/weekist2/client/views/layout/layout.html",
@@ -892,8 +902,7 @@
 		"/home/alberto/Descargas/bootflat.github.io-master/bootflat/scss/bootflat/_button.scss",
 		"/home/alberto/projects/weekist/client/views/home/home.html",
 		"/home/alberto/projects/weekist3/views/footer/footer.html",
-		"/home/alberto/projects/weekistd/client/views/home.html",
-		"/home/alberto/projects/weekist3/views/home/promo/promo.html"
+		"/home/alberto/projects/weekistd/client/views/home.html"
 	],
 	"find":
 	{
@@ -1082,7 +1091,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1104,6 +1113,7 @@
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1120,35 +1130,36 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 387,
+						"buffer_size": 378,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								335,
-								335
+								337,
+								337
 							]
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "client/views/reports/filters/filter_label/filter_label.js",
+					"file": "client/views/users/users.html",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 338,
+						"buffer_size": 428,
 						"regions":
 						{
 						},
@@ -1161,13 +1172,15 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
