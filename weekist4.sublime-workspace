@@ -420,36 +420,29 @@
 	"buffers":
 	[
 		{
-			"file": "server/methods/server.js",
+			"file": "client/views/home/home.html",
 			"settings":
 			{
-				"buffer_size": 418,
+				"buffer_size": 308,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "Searching 36 files for \".find\"\n\n/home/alberto/projects/weekist2/client/views/navbar/navbar.js:\n   25  Template.NavBar.helpers({\n   26  	totalCompleted: function () {\n   27: 		return Items.find({owner: Meteor.userId(), completed_date: {$exists: true} }).count();\n   28  	}\n   29  });\n\n/home/alberto/projects/weekist2/client/views/reports/filters/filter_filter/filter_filter.js:\n    9  Template.FilterFilter.helpers({\n   10  	filters: function () {\n   11: 		return Filters.find({owner: Meteor.userId()}, { sort: { query: 1} });\n   12  	}\n   13  });\n\n/home/alberto/projects/weekist2/client/views/reports/filters/filter_label/filter_label.js:\n   10  Template.FilterLabel.helpers({\n   11  	labels: function () {\n   12: 		return Labels.find({owner: Meteor.userId()}, { sort: { name: 1} });\n   13  	}\n   14  });\n\n/home/alberto/projects/weekist2/client/views/reports/filters/filter_project/filter_projects.js:\n   10  Template.FilterProject.helpers({\n   11  	projects: function () {\n   12: 		return Projects.find({owner: Meteor.userId()}, { sort: { name: 1} });\n   13  	}\n   14  });\n\n/home/alberto/projects/weekist2/client/views/reports/report_content/report_content.js:\n   27  	},\n   28  	hasNotes: function() {\n   29: 		return (Notes.find( {owner: Meteor.userId(), item_id: this.item_id } ).count() > 0);\n   30  	},\n   31  	notes: function() {\n   32: 		return Notes.find( {owner: Meteor.userId(), item_id: this.item_id } );\n   33  	},\n   34  	labelsItem: function() {\n   35  		if (this.labels) {\n   36: 			var labels = Labels.find ({owner: Meteor.userId(), label_id: {$in: this.labels }});	\n   37  			return labels;\n   38  		}\n\n/home/alberto/projects/weekist2/client/views/reports/reports.js:\n   97  \n   98  		if (search) {\n   99: 			return Items.find(search);	\n  100  		} else {\n  101  			return null;\n\n8 matches across 6 files\n",
+			"contents": "<template name=\"FilterLabel\">\n    <div id=\"filter-label\" class=\"form-group\">\n        <label for=\"label-select\">Label:</label>\n        <select id=\"label-select\" class=\"form-control\">\n            <option value=\"all\">All</option>\n            {{#each labels}}\n            	<option value=\"{{label_id}}\">{{name}}</option>\n            {{/<em></em>ach}}\n        </select>\n    </div>\n</template>\n",
+			"file": "client/views/reports/filters/filter_label/filter_label.html",
+			"file_size": 379,
+			"file_write_time": 130845428764958977,
 			"settings":
 			{
-				"buffer_size": 1822,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "server/methods/authentication.js",
-			"settings":
-			{
-				"buffer_size": 2433,
+				"buffer_size": 387,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "settings.json",
+			"file": "client/views/reports/filters/filter_label/filter_label.js",
 			"settings":
 			{
-				"buffer_size": 273,
+				"buffer_size": 338,
 				"line_ending": "Unix"
 			}
 		}
@@ -766,13 +759,23 @@
 		"/home/alberto/projects/weekist2",
 		"/home/alberto/projects/weekist2/client",
 		"/home/alberto/projects/weekist2/client/views",
-		"/home/alberto/projects/weekist2/server",
-		"/home/alberto/projects/weekist2/server/methods"
+		"/home/alberto/projects/weekist2/client/views/reports",
+		"/home/alberto/projects/weekist2/client/views/reports/filters",
+		"/home/alberto/projects/weekist2/client/views/reports/filters/filter_label",
+		"/home/alberto/projects/weekist2/lib"
 	],
 	"file_history":
 	[
-		"/home/alberto/projects/weekist2/server/methods/users.js",
 		"/home/alberto/projects/weekist2/server/methods/server.js",
+		"/home/alberto/projects/weekist2/client/views/application/wait-loading/wait-loading.html",
+		"/home/alberto/projects/weekist2/client/views/layout/layout.html",
+		"/home/alberto/projects/microscope/lib/router.js",
+		"/home/alberto/projects/microscope/client/templates/application/not_found.html",
+		"/home/alberto/projects/weekist2/lib/router.js",
+		"/home/alberto/projects/weekist2/client/views/notfound/not-found.html",
+		"/home/alberto/projects/weekist2/settings.json",
+		"/home/alberto/projects/weekist2/server/methods/authentication.js",
+		"/home/alberto/projects/weekist2/server/methods/users.js",
 		"/home/alberto/projects/weekist2/client/views/reports/report_content/report_content.html",
 		"/home/alberto/projects/weekist2/client/views/reports/report_content/report_content.js",
 		"/home/alberto/projects/weekist2/server/methods/todoist.js",
@@ -890,15 +893,7 @@
 		"/home/alberto/projects/weekist/client/views/home/home.html",
 		"/home/alberto/projects/weekist3/views/footer/footer.html",
 		"/home/alberto/projects/weekistd/client/views/home.html",
-		"/home/alberto/projects/weekist3/views/home/promo/promo.html",
-		"/home/alberto/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
-		"/home/alberto/projects/weekist3/views/home/home_content/home_content.html",
-		"/home/alberto/projects/weekistd/client/views/home.xxx",
-		"/home/alberto/Downloads/proudly/themeforest-6769035-proui-responsive-bootstrap-admin-template/ProUI 2.1 by pixelcave/04 - ProUI Frontend Template (HTML)/less/bootstrap/buttons.less",
-		"/home/alberto/projects/weekist3/client/stylesheets/vendor/custom.bootstrap.json",
-		"/home/alberto/projects/weekist3/client/views/navbar/navbar.html",
-		"/home/alberto/projects/weekist3/client/views/home/home.html",
-		"/home/alberto/projects/weekist2/client/views/navbar/navbar.html"
+		"/home/alberto/projects/weekist3/views/home/promo/promo.html"
 	],
 	"find":
 	{
@@ -909,6 +904,7 @@
 		"height": 96.0,
 		"where_history":
 		[
+			"/home/alberto/projects/weekist2/client/",
 			"/home/alberto/projects/weekist2/client/views",
 			"*.js",
 			"*.html",
@@ -928,6 +924,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Oops",
 			".find",
 			"getCompletedItemsFromDate",
 			"due_date",
@@ -1090,102 +1087,56 @@
 			[
 				{
 					"buffer": 0,
-					"file": "server/methods/server.js",
+					"file": "client/views/home/home.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 418,
+						"buffer_size": 308,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								29,
-								29
+								278,
+								278
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "client/views/reports/filters/filter_label/filter_label.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1822,
+						"buffer_size": 387,
 						"regions":
 						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										187,
-										192
-									],
-									[
-										470,
-										475
-									],
-									[
-										729,
-										734
-									],
-									[
-										998,
-										1003
-									],
-									[
-										1226,
-										1231
-									],
-									[
-										1358,
-										1363
-									],
-									[
-										1518,
-										1523
-									],
-									[
-										1739,
-										1744
-									]
-								],
-								"scope": ""
-							}
 						},
 						"selection":
 						[
 							[
-								1822,
-								1822
+								335,
+								335
 							]
 						],
 						"settings":
 						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 199.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1193,62 +1144,30 @@
 				},
 				{
 					"buffer": 2,
-					"file": "server/methods/authentication.js",
-					"semi_transient": false,
+					"file": "client/views/reports/filters/filter_label/filter_label.js",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2433,
+						"buffer_size": 338,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2433,
-								2433
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 551.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "settings.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 273,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								120,
-								120
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1293,7 +1212,7 @@
 	"project": "weekist4.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
