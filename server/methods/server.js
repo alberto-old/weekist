@@ -4,9 +4,6 @@ Meteor.startup(function () {
 
 
 Meteor.methods({
-	getVersion: function () {
-		return "v2.2";
-	},
 	sendReport: function (email, subject, content) {
 		this.unblock();
 
