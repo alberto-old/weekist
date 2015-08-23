@@ -428,6 +428,22 @@
 			}
 		},
 		{
+			"file": "client/views/footer/footer.js",
+			"settings":
+			{
+				"buffer_size": 97,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "settings.json",
+			"settings":
+			{
+				"buffer_size": 300,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "client/views/reports/filters/filter_label/filter_label.html",
 			"settings":
 			{
@@ -436,10 +452,18 @@
 			}
 		},
 		{
-			"file": "client/views/users/users.html",
+			"file": "server/methods/server.js",
 			"settings":
 			{
-				"buffer_size": 428,
+				"buffer_size": 368,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/reports/reports.html",
+			"settings":
+			{
+				"buffer_size": 1302,
 				"line_ending": "Unix"
 			}
 		}
@@ -451,17 +475,25 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "",
+		"height": 321.0,
+		"last_filter": "form",
 		"selected_items":
 		[
 			[
-				"list",
-				"Package Control: List Packages"
+				"form",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
 			],
 			[
 				"inst",
 				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
 			],
 			[
 				"in",
@@ -716,10 +748,6 @@
 				"Snippet: Meteor: Template.myTemplate.rendered = function ( ) { ... }"
 			],
 			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
 				"star",
 				"Snippet: Meteor.startup(fn)"
 			],
@@ -769,12 +797,16 @@
 		"/home/alberto/projects/weekist2/client",
 		"/home/alberto/projects/weekist2/client/stylesheets",
 		"/home/alberto/projects/weekist2/client/views",
-		"/home/alberto/projects/weekist2/client/views/reports/filters",
-		"/home/alberto/projects/weekist2/client/views/reports/filters/filter_label",
-		"/home/alberto/projects/weekist2/lib"
+		"/home/alberto/projects/weekist2/client/views/footer",
+		"/home/alberto/projects/weekist2/client/views/reports",
+		"/home/alberto/projects/weekist2/server",
+		"/home/alberto/projects/weekist2/server/methods"
 	],
 	"file_history":
 	[
+		"/home/alberto/projects/sunrist/test.html",
+		"/home/alberto/projects/weekist2/server/methods/users.js",
+		"/home/alberto/projects/weekist2/settings.json",
 		"/home/alberto/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
 		"/home/alberto/projects/weekist2/server/methods/server.js",
 		"/home/alberto/projects/weekist2/client/views/application/wait-loading/wait-loading.html",
@@ -783,9 +815,7 @@
 		"/home/alberto/projects/microscope/client/templates/application/not_found.html",
 		"/home/alberto/projects/weekist2/lib/router.js",
 		"/home/alberto/projects/weekist2/client/views/notfound/not-found.html",
-		"/home/alberto/projects/weekist2/settings.json",
 		"/home/alberto/projects/weekist2/server/methods/authentication.js",
-		"/home/alberto/projects/weekist2/server/methods/users.js",
 		"/home/alberto/projects/weekist2/client/views/reports/report_content/report_content.html",
 		"/home/alberto/projects/weekist2/client/views/reports/report_content/report_content.js",
 		"/home/alberto/projects/weekist2/server/methods/todoist.js",
@@ -901,8 +931,7 @@
 		"/home/alberto/projects/weekist3/views/home/features/features.html",
 		"/home/alberto/Descargas/bootflat.github.io-master/bootflat/scss/bootflat/_button.scss",
 		"/home/alberto/projects/weekist/client/views/home/home.html",
-		"/home/alberto/projects/weekist3/views/footer/footer.html",
-		"/home/alberto/projects/weekistd/client/views/home.html"
+		"/home/alberto/projects/weekist3/views/footer/footer.html"
 	],
 	"find":
 	{
@@ -933,6 +962,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"test2",
+			"time",
+			"\"getVersion\"",
 			"Oops",
 			".find",
 			"getCompletedItemsFromDate",
@@ -1113,7 +1145,7 @@
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"color_scheme": "Packages/Theme - Glacier/glacier.tmTheme",
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1121,11 +1153,70 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "client/views/footer/footer.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 97,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								89,
+								89
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Theme - Glacier/glacier.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "settings.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								294,
+								294
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Theme - Glacier/glacier.tmTheme",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "client/views/reports/filters/filter_label/filter_label.html",
 					"semi_transient": false,
 					"settings":
@@ -1143,44 +1234,74 @@
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"color_scheme": "Packages/Theme - Glacier/glacier.tmTheme",
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "client/views/users/users.html",
-					"semi_transient": true,
+					"buffer": 4,
+					"file": "server/methods/server.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 428,
+						"buffer_size": 368,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								165,
+								165
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"color_scheme": "Packages/Theme - Glacier/glacier.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "client/views/reports/reports.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1291,
+								1291
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Theme - Glacier/glacier.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 318.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1263,7 +1384,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 304.0,
+	"side_bar_width": 298.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
