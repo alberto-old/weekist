@@ -1,35 +1,59 @@
 <template name="NavBar">
-    <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand" href="/"><img src="images/weekist_logo.png" class="img-responsive" alt="weekist logo"></a>
-        </div>
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand" href="/"><img src="images/weekist_logo.png" class="img-responsive" alt="weekist logo"></a>
+    </div>
 
-        {{#if currentUser }}
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="main-navbar" class="collapse navbar-collapse">
-            <div class="container">
-                <!-- user login menu -->
-                <ul class="nav navbar-nav navbar-right">
-                    <li id="navbar-refresh">
-                        <a id="navbar-refresh-link" href="#"><i class="fa fa-refresh"></i></a>
-                    </li>
-                    <li id="navbar-user-dropdown" class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{currentUser.profile.name}} <b class="caret"></b></a>
-                        <ul class="dropdown-menu" style="width: 200px;">
-                            <li><a href="#"><i class="fa fa-tasks"></i> Completed tasks <span class="badge">{{totalCompleted}}</span></a></li>
-                            <li><a id="logout" href="/"><i class="fa fa-sign-out"></i> Logout</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- end user login menu -->
-            </div>
+    {{#if currentUser }}
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div id="main-navbar" class="collapse navbar-collapse">
+        <div class="container">
+          <!-- user login menu -->
+          <ul class="nav navbar-nav navbar-right">
+            <li id="navbar-donate">
+              <a id="navbar-donate-link" href="https://www.paypal.me/bitmoon" target="_blank">
+                Donate <i class="fa fa-paypal"></i>
+              </a>
+            </li>
+            <li id="navbar-walkthrough">
+              <a id="navbar-walkthrough-link" href="#">
+                Tour <i class="fa fa-play-circle"></i>
+              </a>
+            </li>
+            <li id="navbar-refresh">
+              <a id="navbar-refresh-link" href="#">
+                Refresh <i class="fa fa-refresh"></i>
+              </a>
+            </li>
+            <li id="navbar-user-dropdown" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{currentUser.profile.name}}
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu" style="width: 200px;">
+                <li>
+                  <a href="#">
+                    <i class="fa fa-tasks"></i>
+                    Completed tasks
+                    <span class="badge">{{totalCompleted}}</span>
+                  </a>
+                </li>
+                <li>
+                  <a id="logout" href="/">
+                    <i class="fa fa-sign-out"></i>
+                    Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- end user login menu -->
         </div>
-        <!-- /.navbar-collapse -->
-        {{/if}}
-    </nav>
+      </div>
+      <!-- /.navbar-collapse -->
+    {{/if}}
+  </nav>
 </template>

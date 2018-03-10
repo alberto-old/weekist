@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Repo",
+				"ReportContent (obj) [C]"
+			],
+			[
 				"un",
 				"undefined"
 			],
@@ -420,18 +424,10 @@
 	"buffers":
 	[
 		{
-			"file": "client/views/home/home.html",
+			"file": "client/views/reports/report_content/report_content.js",
 			"settings":
 			{
-				"buffer_size": 308,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/views/footer/footer.js",
-			"settings":
-			{
-				"buffer_size": 97,
+				"buffer_size": 2836,
 				"line_ending": "Unix"
 			}
 		},
@@ -439,31 +435,15 @@
 			"file": "settings.json",
 			"settings":
 			{
-				"buffer_size": 300,
+				"buffer_size": 514,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/views/reports/filters/filter_label/filter_label.html",
+			"file": "lib/router.js",
 			"settings":
 			{
-				"buffer_size": 378,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/methods/server.js",
-			"settings":
-			{
-				"buffer_size": 368,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/views/reports/reports.html",
-			"settings":
-			{
-				"buffer_size": 1302,
+				"buffer_size": 1192,
 				"line_ending": "Unix"
 			}
 		}
@@ -793,17 +773,20 @@
 	},
 	"expanded_folders":
 	[
-		"/home/alberto/projects/weekist2",
-		"/home/alberto/projects/weekist2/client",
-		"/home/alberto/projects/weekist2/client/stylesheets",
-		"/home/alberto/projects/weekist2/client/views",
-		"/home/alberto/projects/weekist2/client/views/footer",
-		"/home/alberto/projects/weekist2/client/views/reports",
-		"/home/alberto/projects/weekist2/server",
-		"/home/alberto/projects/weekist2/server/methods"
+		"/Users/alberto/Dropbox/projects/weekist",
+		"/Users/alberto/Dropbox/projects/weekist/client"
 	],
 	"file_history":
 	[
+		"/Users/alberto/Dropbox/projects/weekist/client/views/reports/report_content/report_content.html",
+		"/Users/alberto/Dropbox/projects/weekist/client/stylesheets/home.import.less",
+		"/Users/alberto/Dropbox/projects/weekist/client/views/application/layout/head.html",
+		"/Users/alberto/Dropbox/projects/weekist/server/methods/server.js",
+		"/Users/alberto/Dropbox/projects/weekist/client/views/reports/reports.html",
+		"/Users/alberto/Dropbox/projects/weekist/client/views/reports/filters/filter_label/filter_label.html",
+		"/Users/alberto/Dropbox/projects/weekist/settings.json",
+		"/Users/alberto/Dropbox/projects/weekist/client/views/footer/footer.js",
+		"/Users/alberto/Dropbox/projects/weekist/client/views/home/home.html",
 		"/home/alberto/projects/sunrist/test.html",
 		"/home/alberto/projects/weekist2/server/methods/users.js",
 		"/home/alberto/projects/weekist2/settings.json",
@@ -922,20 +905,11 @@
 		"/home/alberto/projects/weekist3/views/reports/report_selector/report_selector.html",
 		"/home/alberto/projects/weekist3/views/reports/reports.html",
 		"/home/alberto/projects/weekist3/views/reports/report_content/report_content.html",
-		"/home/alberto/projects/weekist3/client/stylesheets/sites/home.import.less",
-		"/home/alberto/projects/weekistd/client/views/reports.xxx",
-		"/home/alberto/projects/weekist3/client/stylesheets/typo.import.less",
-		"/home/alberto/projects/weekist3/lib/router.js",
-		"/home/alberto/projects/weekist3/views/home/home.html",
-		"/home/alberto/projects/weekist3/views/home/login/login.html",
-		"/home/alberto/projects/weekist3/views/home/features/features.html",
-		"/home/alberto/Descargas/bootflat.github.io-master/bootflat/scss/bootflat/_button.scss",
-		"/home/alberto/projects/weekist/client/views/home/home.html",
-		"/home/alberto/projects/weekist3/views/footer/footer.html"
+		"/home/alberto/projects/weekist3/client/stylesheets/sites/home.import.less"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 43.0
 	},
 	"find_in_files":
 	{
@@ -962,6 +936,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"user",
 			"test2",
 			"time",
 			"\"getVersion\"",
@@ -1123,90 +1098,62 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "client/views/home/home.html",
+					"file": "client/views/reports/report_content/report_content.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 308,
+						"buffer_size": 2836,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								278,
-								278
+								223,
+								223
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/Theme - Glacier/glacier.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 92.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "client/views/footer/footer.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 97,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								89,
-								89
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/Theme - Glacier/glacier.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "settings.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 300,
+						"buffer_size": 514,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								294,
-								294
+								506,
+								506
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/Theme - Glacier/glacier.tmTheme",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1216,92 +1163,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "client/views/reports/filters/filter_label/filter_label.html",
+					"buffer": 2,
+					"file": "lib/router.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 378,
+						"buffer_size": 1192,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								337,
-								337
+								1192,
+								1192
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/Theme - Glacier/glacier.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "server/methods/server.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 368,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								165,
-								165
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/Theme - Glacier/glacier.tmTheme",
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 445.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "client/views/reports/reports.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1302,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1291,
-								1291
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/Theme - Glacier/glacier.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 318.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]

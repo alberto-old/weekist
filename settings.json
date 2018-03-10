@@ -1,16 +1,22 @@
 {
-  	"kadira": {
-  		"appId": "ckmWA5MfSw9796eEw",
-  		"appSecret": "91f72f24-8725-4f61-9316-ecc4da7ffb64"
-	},
-  	"userAdmin": "WWSKnfPaGzvuciWxn",
-	"public": {
-		"ga": {
-			"account": "UA-46794993-4"
-		},
-		"mixpanel": {
-			"token": "f1ee479b1918907608405a258056ca4a"
-		},
-		"version": "v2.2.2"
-	}
+  "kadira": {
+    "appId": "DEFINE_YOUR_OWN",
+    "appSecret": "DEFINE_YOUR_OWN"
+  },
+  "userAdmin": "WWSKnfPaGzvuciWxn",
+  "oauth": {
+    "clientId": "DEFINE_YOUR_OWN",
+    "secret": "DEFINE_YOUR_OWN",
+    "scope": "data:read",
+    "site": "https://todoist.com/oauth/authorize"
+  },
+  "public": {
+    "ga": {
+      "account": "DEFINE_YOUR_OWN"
+    },
+    "mixpanel": {
+      "token": "DEFINE_YOUR_OWN"
+    },
+    "version": "v2.2.6"
+  }
 }

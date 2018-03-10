@@ -1,38 +1,50 @@
 <template name="ReportContent">
 
-	<div id="report-content-panel" class="panel panel-default">
-		  <div class="panel-heading">
-				<h3 class="panel-title">{{reportTitle}}
-					<span id="btn-print" class="pull-right"><i class="fa fa-print"></i></span>
-					<span id="btn-mail" class="pull-right"><i class="fa fa-envelope-o"></i></span>
-				</h3>
-		  </div>
-		  <div class="panel-body">
-				<table class="table">
-					<tbody>
-						{{#each reportItems}}
-						<tr>
-                    		<td class="item-date" style="width: 130px;">{{formatDate completed_date}}</td>
-                    		{{#if showDueDate}}
-                    		<td class="item-date" style="width: 140px;"><i class="fa fa-circle {{statusCompleted}}"></i> {{dueDate}}</td>
-                    		{{/if}}
-                    		<td class="item-content">
-                    			{{{formatItem content}}}<br>
-                    			{{#if showNotes}}
-                    				{{#if hasNotes}}
-                    					<ul>
-                    					{{#each notes}}
-                    						<li>{{{formatItem content}}}</li>
-                    					{{/each}}
-                    					</ul>
-                    				{{/if}}
-                    			{{/if}}
-                    		</td>
-						</tr>
-						{{/each}}
-					</tbody>
-				</table>
-		  </div>
-	</div>
+  <div id="report-content-panel" class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{reportTitle}}
+        <span id="btn-print" class="pull-right">
+          <i class="fa fa-print"></i>
+        </span>
+        <span id="btn-mail" class="pull-right">
+          <i class="fa fa-envelope-o"></i>
+        </span>
+        <span id="btn-excel" class="pull-right">
+          <i class="fa fa-file-excel-o" style="color: white"></i>
+        </span>
+				<span id="btn-donate" class="pull-right">
+          <a id="report-donate-link" href="https://www.paypal.me/bitmoon" target="_blank"><i class="fa fa-paypal" style="color: white"></i></a>
+        </span>
+      </h3>
+    </div>
+    <div class="panel-body">
+      <table class="table">
+        <tbody>
+          {{#each reportItems}}
+            <tr>
+              <td class="item-date" style="width: 130px;">{{formatDate completed_date}}</td>
+              {{#if showDueDate}}
+                <td class="item-date" style="width: 140px;">
+                  <i class="fa fa-circle {{statusCompleted}}"></i>
+                  {{dueDate}}</td>
+              {{/if}}
+              <td class="item-content">
+                {{{formatItem content}}}<br>
+                {{#if showNotes}}
+                  {{#if hasNotes}}
+                    <ul>
+                      {{#each notes}}
+                        <li>{{{formatItem content}}}</li>
+                      {{/each}}
+                    </ul>
+                  {{/if}}
+                {{/if}}
+              </td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
 
 </template>
